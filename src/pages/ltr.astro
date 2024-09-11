@@ -1,0 +1,177 @@
+---
+import Layout from '../layouts/Layout.astro';
+import GridLayoutTestCard from "../components/GridLayoutTestCard.astro";
+---
+
+<Layout title="Left to Right (Top to Bottom)">
+	<main>
+		<div class="container pb-5 pt-3">
+			<h1 class="display-2 fw-bold pb-3">Left to Right (Top to Bottom)</h1>
+			<hr class="pb-3"></hr>
+			<section>
+				<h2 class="display-4 fw-bold">Text</h2>
+				<p>
+				English, Spanish, Chinese, Hindi, Russian, Portuguese, Bengali, French, German, Japanese, Italian, Turkish, Vietnamese, Korean, Polish, Dutch, Romanian, Greek, Thai, Swedish, Hungarian, Czech, Danish, Finnish, Norwegian, Indonesian, Malay, Filipino, Ukrainian, Serbian, Croatian, Bulgarian
+				</p>
+			</section>
+			<section class="mt-4">
+				<h2 class="display-5 fw-bold">Grid Layout</h2>
+				<div class="row gy-1 gy-md-0">
+					<div class="col-md">
+						<GridLayoutTestCard itemNumber=1>
+					</div>
+					<div class="col-md">
+						<GridLayoutTestCard itemNumber=2>
+					</div>
+					<div class="col-md">
+						<GridLayoutTestCard itemNumber=3>
+					</div>
+				</div>
+				<div class="row mt-0 mt-md-2 gy-1 gy-md-0">
+					<div class="col-md">
+						<GridLayoutTestCard itemNumber=4>
+					</div>
+					<div class="col-md">
+						<GridLayoutTestCard itemNumber=5>
+					</div>
+					<div class="col-md">
+						<GridLayoutTestCard itemNumber=6>
+					</div>
+				</div>
+			</section>
+			<section class="mt-4">
+				<h2 class="display-5 fw-bold">Flexbox</h2>
+				<div class="d-flex flex-wrap">
+					<div class="card" style="width:18rem">
+						<div class="card-body p-5">
+							<h3>Flex Item 1</h3>
+							<p>
+								Flex Item 1 has a width of 18rem.
+							</p>
+						</div>
+					</div>
+					<div class="card" style="width:40rem">
+						<div class="card-body p-5">
+							<h3>Flex Item 2</h3>
+							<p>
+								Flex Item 2 has a width of 40rem.
+							</p>
+						</div>
+					</div>
+					<div class="card" style="width:30rem">
+						<div class="card-body p-5">
+							<h3>Flex Item 3</h3>
+							<p>
+								Flex Item 3 has a width of 30rem.
+							</p>
+						</div>
+					</div>
+					<div class="card" style="width:18rem">
+						<div class="card-body p-5">
+							<h3>Flex Item 4</h3>
+							<p>
+								Flex Item 4 has a width of 18rem.
+							</p>
+						</div>
+					</div>
+					<div class="card" style="width:25rem">
+						<div class="card-body p-5">
+							<h3>Flex Item 5</h3>
+							<p>
+								Flex Item 5 has a width of 25rem.
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="mt-4">
+				<h2 class="display-5 fw-bold">Form</h2>
+				<div class="card">
+					<div class="card-body p-4">
+						<form class="row g-3">
+							<div class="col-md-6">
+								<label for="inputEmail4" class="form-label">Email</label>
+								<input type="email" class="form-control" id="inputEmail4">
+							</div>
+							<div class="col-md-6">
+								<label for="inputPassword4" class="form-label">Password</label>
+								<input type="password" class="form-control" id="inputPassword4">
+							</div>
+							<div class="col-12">
+								<label for="inputAddress" class="form-label">Address</label>
+								<input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+							</div>
+							<div class="col-12">
+								<label for="inputAddress2" class="form-label">Address 2</label>
+								<input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+							</div>
+							<div class="col-md-6">
+								<label for="inputCity" class="form-label">City</label>
+								<input type="text" class="form-control" id="inputCity">
+							</div>
+							<div class="col-md-4">
+								<label for="inputState" class="form-label">State</label>
+								<select id="inputState" class="form-select">
+								<option selected>Choose...</option>
+								<option value="AL">AL</option>
+								<option value="IL">IL</option>
+								<option value="FL">FL</option>
+								<option value="NY">NY</option>
+								<option value="CA">CA</option>
+								<option value="TX">TX</option>
+								</select>
+							</div>
+							<div class="col-md-2">
+								<label for="inputZip" class="form-label">Zip</label>
+								<input type="text" class="form-control" id="inputZip">
+							</div>
+							<div class="col-12">
+								<div class="form-check">
+								<input class="form-check-input" type="checkbox" id="gridCheck">
+								<label class="form-check-label" for="gridCheck">
+									Check me out
+								</label>
+								</div>
+							</div>
+							<div class="col-12">
+								<button type="submit" class="btn btn-dark">Sign in</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</section>
+			<section class="mt-4">
+				<h2 class="display-5 fw-bold">Table</h2>
+				<table class="table">
+					<thead>
+						<tr>
+						<th scope="col">#</th>
+						<th scope="col">First</th>
+						<th scope="col">Last</th>
+						<th scope="col">Handle</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+						<th scope="row">1</th>
+						<td>Mark</td>
+						<td>Otto</td>
+						<td>@mdo</td>
+						</tr>
+						<tr>
+						<th scope="row">2</th>
+						<td>Jacob</td>
+						<td>Thornton</td>
+						<td>@fat</td>
+						</tr>
+						<tr>
+						<th scope="row">3</th>
+						<td colspan="2">Larry the Bird</td>
+						<td>@twitter</td>
+						</tr>
+					</tbody>
+				</table>
+			</section>
+        </div>  
+	</main>
+</Layout>

@@ -1,0 +1,31 @@
+---
+import Layout from '../layouts/Layout.astro';
+import LanguageCard from '../components/LanguageCard.astro';
+---
+
+<Layout title="Writing Directions Test Site" >
+	<main>
+		<section id="homeJumbotron">
+			<div class="container text-white jumbotronContainer">
+				<h1 class="display-4 fw-bold">The world is big and it keeps getting bigger.</h1><hr></hr>
+				<p class="lead">
+					These days, providing support for multiple languages is necessary in many applications. Developers may not consider the need to support differently justified languages.
+				</p>
+			</div>
+		</section>
+		<section class="container pt-5 languageContainer">
+			<h2>This site is designed to be a test for the support of three writing systems:</h2>
+			<div class="row mt-5">
+				<div class="col-md">
+					<LanguageCard language="Left to Right" supportingText="Left to right systems are used heavily in the western world in languages like English and Spanish." imageUrl="/europe.jpg" />
+				</div>
+				<div class="col-md">
+					<LanguageCard language="Right to Left" supportingText="Right to left systems are common in languages like Arabic and Farsi." imageUrl="/dubai.jpg" />
+				</div>
+				<div class="col-md">
+					<LanguageCard language="Top to Bottom" supportingText="Top to bottom systems are seen in traditional Chinese and Japanese. (Note that most websites in these languages use LTR—this is mostly a development exercise)" imageUrl="/japan.jpg" />
+				</div>
+			</div>
+		</section>
+	</main>
+</Layout>

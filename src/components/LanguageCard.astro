@@ -1,0 +1,11 @@
+---
+const { language = '', supportingText = '', imageUrl = '' } = Astro.props;
+---
+
+<div class="card my-1 my-md-0 h-100">
+  <img src={imageUrl || '/default-image.jpg'} class="card-img-top" alt="Card image" />
+  <div class="card-body">
+    <h5 class="card-title fw-bold">{language}</h5>
+    <p class="card-text">{supportingText || 'Default supporting text'}</p>
+  </div>
+</div>

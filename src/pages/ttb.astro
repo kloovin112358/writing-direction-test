@@ -1,0 +1,263 @@
+---
+import Layout from '../layouts/Layout.astro';
+import GridLayoutTestCardChinese from "../components/GridLayoutTestCardChinese.astro";
+---
+<style is:inline>
+html {
+	writing-mode: vertical-rl;
+}
+/* reset styles/fixes for vertical-rl writing mode */
+h1,h2,h3,h4,h5,h6 {
+	margin:0
+}
+h2 {margin-left:0.5rem}
+#footerContainer {
+	padding-bottom:0;
+	padding-left:3rem
+}
+.navbar-brand {
+	margin-right:0!important;
+	margin-bottom:0.5rem!important;
+}
+.navbar-nav {
+	padding:0!important;
+	margin-left:0!important;
+}
+#endNavLink {
+	padding-top:0.5rem!important
+}
+.customRow {
+	display:grid;grid-auto-flow: column;column-gap: 0.5em
+}
+#inputState {
+    padding: 0.5rem; /* Adjust padding as needed */
+    background-position: right 0.5rem center; /* Adjust background position if needed */
+	width:35.6px;
+}
+</style>
+<Layout title="Top to Bottom (Right to Left)">
+	<main lang="zh">
+		<div class="container-fluid pb-5 pt-3 ps-5">
+			<h1 class="display-2 fw-bold me-1">Top to Bottom (Right to Left)</h1>
+			<small><i>Note: I do not speak Chinese, so please excuse the awful Google Translate translations</i></small>
+			<section class="me-4">
+				<h2 class="display-4 fw-bold">Text</h2>
+				<p>
+				中文, 日文, 韩文
+				</p>
+			</section>
+			<section class="me-4">
+				<h2 class="display-5 fw-bold">Grid Layout</h2>
+				<div class="customRow">
+					<div>
+						<div class="card">
+							<div class="card-header fw-bold">
+								物品 1
+							</div>
+							<div class="card-body">
+								第 1 项正文。这是占位符文本。这是占位符文本。
+							</div>
+						</div>
+					</div>
+					<div>
+						<div class="card">
+							<div class="card-header fw-bold">
+								物品 2
+							</div>
+							<div class="card-body">
+								第 2 项正文。这是占位符文本。这是占位符文本。
+							</div>
+						</div>
+					</div>
+					<div>
+						<div class="card">
+							<div class="card-header fw-bold">
+								物品 3
+							</div>
+							<div class="card-body">
+								第 3 项正文。这是占位符文本。这是占位符文本。
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="me-1 customRow">
+					<div>
+						<div class="card">
+							<div class="card-header fw-bold">
+								物品 4
+							</div>
+							<div class="card-body">
+								第 4 项正文。这是占位符文本。这是占位符文本。
+							</div>
+						</div>
+					</div>
+					<div>
+						<div class="card">
+							<div class="card-header fw-bold">
+								物品 52
+							</div>
+							<div class="card-body">
+								第 5 项正文。这是占位符文本。这是占位符文本。
+							</div>
+						</div>
+					</div>
+					<div>
+						<div class="card">
+							<div class="card-header fw-bold">
+								物品 6
+							</div>
+							<div class="card-body">
+								第 6 项正文。这是占位符文本。这是占位符文本。
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="me-4">
+				<h2 class="display-5 fw-bold">Flexbox</h2>
+				<div class="d-flex flex-wrap flex-row">
+					<div class="card" style="height:18rem">
+						<div class="card-body p-5">
+							<h3>弹性项目 1</h3>
+							<p>
+								Flex Item 1 的宽度为 18rem。
+							</p>
+						</div>
+					</div>
+					<div class="card" style="height:40rem">
+						<div class="card-body p-5">
+							<h3>弹性项目 2</h3>
+							<p>
+								Flex Item 2 的宽度为 40rem。
+							</p>
+						</div>
+					</div>
+					<div class="card" style="height:30rem">
+						<div class="card-body p-5">
+							<h3>弹性项目 3</h3>
+							<p>
+								Flex Item 3 的宽度为 30rem。
+							</p>
+						</div>
+					</div>
+					<div class="card" style="height:18rem">
+						<div class="card-body p-5">
+							<h3>弹性项目 4</h3>
+							<p>
+								Flex Item 4 的宽度为 18rem。
+							</p>
+						</div>
+					</div>
+					<div class="card" style="height:25rem">
+						<div class="card-body p-5">
+							<h3>弹性项目 5</h3>
+							<p>
+								Flex Item 5 的宽度为 25rem。
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="me-4">
+				<h2 class="display-5 fw-bold">Form</h2>
+				<div class="card">
+					<div class="card-body p-4">
+						<form>
+							<div class="col customRow">
+								<div class="col-md-6">
+									<label for="inputEmail4" class="form-label">电子邮件</label>
+									<input type="email" class="form-control h-100" id="inputEmail4">
+								</div>
+								<div class="col-md-6">
+									<label for="inputPassword4" class="form-label">密码</label>
+									<input type="password" class="form-control h-100" id="inputPassword4">
+								</div>
+							</div>
+							<div class="col mx-2 customRow">
+								<div class="col-md-6">
+									<label for="inputAddress" class="form-label">地址</label>
+									<input type="text" class="form-control h-100" id="inputAddress" placeholder="1234 主街">
+								</div>
+							</div>
+							<div class="col mx-2 customRow">
+								<div class="col-md-6">
+									<label for="inputAddress2" class="form-label">地址 2</label>
+								<input type="text" class="form-control h-100" id="inputAddress2" placeholder="公寓、单间或楼层">
+								</div>
+							</div>
+							<div class="col me-2 ms-1 customRow">
+								<div class="col-md-6">
+									<label for="inputCity" class="form-label">城市</label>
+									<input type="text" class="form-control h-100" id="inputCity">
+								</div>
+								<div class="col-md-4 verticalSelectContainer">
+									<label for="inputState" class="form-label">状态</label>
+									<select id="inputState" class="form-select h-100">
+										<option selected>选择...</option>
+										<option value="AL">艾尔</option>
+										<option value="IL">白细胞介素</option>
+										<option value="FL">佛罗里达州</option>
+										<option value="NY">纽约</option>
+										<option value="CA">加州</option>
+										<option value="TX">德克萨斯州</option>
+									</select>
+								</div>
+								<div class="col-md-6">
+									<label for="inputZip" class="form-label">邮政编码</label>
+									<input type="text" class="form-control h-100" id="inputZip">
+								</div>
+							</div>
+							<div class="col customRow">
+								<div class="form-check">
+								<div class="d-flex justify-content-start align-items-center">
+									<input class="form-check-input ms-0 mb-2" type="checkbox" id="gridCheck">
+									<label class="form-check-label me-0" for="gridCheck">
+										查看我
+									</label>
+								</div>
+								</div>
+							</div>
+							<div class="col customRow">
+								<div>
+									<button type="submit" class="btn btn-dark px-2 py-3">登入</button>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</section>
+			<section class="me-4">
+				<h2 class="display-5 fw-bold">Table</h2>
+				<table class="table h-100 table-bordered">
+					<thead>
+						<tr>
+						<th scope="col">#</th>
+						<th scope="col">名</th>
+						<th scope="col">姓</th>
+						<th scope="col">Twitter 帐号</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+						<th scope="row">1</th>
+						<td>小明</td>
+						<td>李</td>
+						<td>@xiaoming123</td>
+						</tr>
+						<tr>
+						<th scope="row">2</th>
+						<td>美丽</td>
+						<td>张</td>
+						<td>@meili_001</td>
+						</tr>
+						<tr>
+						<th scope="row">3</th>
+						<td colspan="2">强</td>
+						<td>@qiang_lucky</td>
+						</tr>
+					</tbody>
+				</table>
+			</section>
+        </div>  
+	</main>
+</Layout>
